@@ -1,0 +1,21 @@
+{
+  "name": "psychomieze/carl",
+  "description": "This extension is used to show case form engine features",
+  "type": "typo3-cms-extension",
+  "license": "GPL-2.0+",
+  "authors": [
+    {
+      "name": "Susanne Moog",
+      "role": "Developer",
+      "homepage": "https://typo3.com/"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Psychomieze\\Carl\\": "Classes/"
+    }
+  },
+  "require": {
+    "typo3/cms-core": "~8.7"
+  }
+}
