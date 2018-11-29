@@ -1,0 +1,30 @@
+rootPageId: 1
+base: 'https://example.com/'
+languages:
+  -
+    languageId: '0'
+    title: English
+    navigationTitle: English
+    base: /
+    locale: en_GB.UTF-8
+    iso-639-1: en
+    hreflang: en-GB
+    direction: ltr
+    typo3Language: default
+    flag: global
+    enabled: true
+errorHandling: {  }
+routes: {  }
+routeEnhancers:
+  t3symfony_api:
+    type: ByPass
+    limitToPages: [26]
+    routePath: '/v1/{apiParameters}'
+    requirements:
+      apiParameters: '.+'
+  t3symfony_fe:
+    type: ByPass
+    limitToPages: [27]
+    routePath: '/{feParameters}'
+    requirements:
+      feParameters: '.+'
