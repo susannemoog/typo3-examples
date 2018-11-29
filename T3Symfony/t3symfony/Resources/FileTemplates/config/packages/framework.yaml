@@ -1,0 +1,14 @@
+framework:
+  secret: '%env(APP_SECRET)%'
+  http_method_override: true
+  trusted_hosts: ~
+  session:
+    # With this config, PHP's native session handling is used
+    handler_id: ~
+  php_errors:
+    log: true
+  # The 'ide' option turns all of the file paths in an exception page
+  # into clickable links that open the given file using your favorite IDE.
+  # When 'ide' is set to null the file is opened in your web browser.
+  # See https://symfony.com/doc/current/reference/configuration/framework.html#ide
+  ide: ~
