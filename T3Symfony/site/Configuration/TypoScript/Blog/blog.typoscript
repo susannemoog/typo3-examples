@@ -1,0 +1,54 @@
+@import 'EXT:blog/Configuration/TypoScript/Static/setup.txt'
+
+plugin.tx_blog {
+
+	view {
+		templateRootPaths.10 = EXT:site/Resources/Private/Templates/Blog/
+		partialRootPaths.10 = EXT:site/Resources/Private/Partials/Blog/
+		layoutRootPaths.10 = EXT:site/Resources/Private/Layouts/Blog
+	}
+}
+
+plugin.tx_blog.settings {
+	sidebarWidgets {
+		10 >
+		20 >
+		30 = tt_content.list.20.blog_tagwidget
+		40 >
+		50 = tt_content.list.20.blog_archivewidget
+	}
+
+	comments {
+		google_recaptcha {
+			website_key = 6Lfx9XQUAAAAAF5ye2ngcaRz0SuGcmjc4kjMIH_J
+			secret_key = fx9XQUAAAAAMHo8BSHv-XkdZt9MbrkjD63_Gu6
+		}
+	}
+}
+
+config.tx_extbase {
+	persistence {
+		classes {
+			Examples\Site\Domain\Model\Author {
+				mapping {
+					tableName = tx_blog_domain_model_author
+				}
+			}
+			Examples\Site\Domain\Model\Post {
+				mapping {
+					tableName = pages
+				}
+			}
+			T3G\AgencyPack\Blog\Domain\Model\Post {
+				subclasses {
+					Examples\Site\Domain\Model\Post = Examples\Site\Domain\Model\Post
+				}
+			}
+			T3G\AgencyPack\Blog\Domain\Model\Author {
+				subclasses {
+					Examples\Site\Domain\Model\Author = Examples\Site\Domain\Model\Author
+				}
+			}
+		}
+	}
+}
