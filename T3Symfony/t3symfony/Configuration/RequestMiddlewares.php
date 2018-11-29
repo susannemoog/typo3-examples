@@ -11,7 +11,7 @@ return [
                 'typo3/cms-frontend/page-resolver',
             ],
             'before' => [
-                'typo3/cms-frontend/shortcut-and-mountpoint-redirec'
+                'typo3/cms-frontend/shortcut-and-mountpoint-redirect'
             ]
         ],
     ],
