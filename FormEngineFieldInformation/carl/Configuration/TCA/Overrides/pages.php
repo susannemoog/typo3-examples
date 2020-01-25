@@ -7,3 +7,7 @@ $GLOBALS['TCA']['pages']['columns']['title']['config']['fieldControl']['Generate
     'renderType' => 'GenerateData',
 ];
 
+$GLOBALS['TCA']['pages']['columns']['sitemap_changefreq']['config']['fieldControl']['linkPopup'] = [
+    'renderType' => 'linkPopup',
+];
+

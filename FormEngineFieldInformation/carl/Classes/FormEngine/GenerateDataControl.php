@@ -11,7 +11,7 @@ class GenerateDataControl extends AbstractNode
     public function render()
     {
         return [
-            'iconIdentifier' => 'generate-data',
+            'iconIdentifier' => 'actions-edit-redo',
             'title' => 'Generate Data',
             'linkAttributes' => [
                 'class' => 'generateData '

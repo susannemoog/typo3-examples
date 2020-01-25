@@ -19,13 +19,13 @@ define(function () {
    */
   GenerateData.initializeEvents = function () {
 
-    $('.generateData').on('click', function (evt) {
-      evt.preventDefault();
-      top.TYPO3.Notification.success('Generation Done', 'yay');
+    document.querySelector('.generateData').addEventListener('click', function(evt){
+        evt.preventDefault();
+        top.TYPO3.Notification.success('Generation Done', 'yay');
     });
   };
 
-  $(GenerateData.initializeEvents);
+  GenerateData.initializeEvents();
 
   return GenerateData;
 });

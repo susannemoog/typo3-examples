@@ -12,5 +12,5 @@ $GLOBALS['TYPO3_CONF_VARS']['SYS']['formEngine']['nodeRegistry'][1487112285] = [
 $GLOBALS['TYPO3_CONF_VARS']['SYS']['formEngine']['nodeRegistry'][1485351217] = [
     'nodeName' => 'GenerateData',
     'priority' => 30,
-    'class' => \Susanne\Carl\FormEngine\FieldControl\GenerateDataControl::class
+    'class' => \Susanne\Carl\FormEngine\GenerateDataControl::class
 ];
