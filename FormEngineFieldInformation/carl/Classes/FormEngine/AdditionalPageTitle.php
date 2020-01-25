@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Psychomieze\Carl\FormEngine;
+namespace Susanne\Carl\FormEngine;
 
 
 use TYPO3\CMS\Backend\Form\AbstractNode;

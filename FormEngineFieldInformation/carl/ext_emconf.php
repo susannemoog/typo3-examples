@@ -10,10 +10,10 @@ $EM_CONF[$_EXTKEY] = [
     'clearCacheOnLoad' => 0,
     'author' => 'Susanne Moog',
     'author_email' => 'susanne.moog@typo3.com',
-    'version' => '8.7.x-dev',
+    'version' => '10.4.x-dev',
     'constraints' => [
         'depends' => [
-            'typo3' => '8.7.0-8.7.99',
+            'typo3' => '8.7.0-10.4.99',
         ],
         'conflicts' => [],
         'suggests' => [],
