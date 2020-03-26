@@ -66,7 +66,7 @@ class SystemInformationToolbarItemExtension
         return [
             htmlspecialchars('Site Version'),
             htmlspecialchars($revision),
-            $this->iconFactory->getIcon('sysinfo-git', Icon::SIZE_SMALL)->render(),
+            'sysinfo-git',
         ];
     }
 
