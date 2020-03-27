@@ -17,7 +17,7 @@ class AdditionalPageTitle extends AbstractNode
     public function render(): array
     {
         $result = $this->initializeResultArray();
-        $result['html'] = 'The <strong>current</strong> title is: ' . $this->data['recordTitle'];
+        $result['html'] = 'The <strong>current</strong> title is: ' . htmlspecialchars($this->data['recordTitle'], ENT_QUOTES | ENT_HTML5);
         return $result;
     }
 }
